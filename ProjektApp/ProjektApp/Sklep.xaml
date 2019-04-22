@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjektApp.Sklep" BackgroundColor="White">
+    <ContentPage.Content>
+       
+        <StackLayout>
+
+            <Button Text="Katalog rowerowy" IsEnabled="False" BackgroundColor="Green" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  HeightRequest="50"/>
+
+            <ScrollView>
+
+
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"  />
+                             <RowDefinition Height="240"  />
+                        <RowDefinition Height="40"  />
+                        <RowDefinition Height="50"  />
+    
+                        <RowDefinition Height="240"  />
+                        <RowDefinition Height="40"  />
+                        <RowDefinition Height="50"  />
+                        <RowDefinition Height="240"  />
+                        <RowDefinition Height="240"  />
+                        <RowDefinition Height="40"  />
+                        <RowDefinition Height="50"  />
+
+
+
+
+
+
+
+                    </Grid.RowDefinitions>
+                    <Image Source="https://www.rowerymerida.pl/materialy/prod/sredni_2013/1656.jpg" Aspect="AspectFit" Grid.ColumnSpan="3" Grid.Column="0" Grid.RowSpan="1" Grid.Row="1" />
+                <Label Text="Merida BigNine 500 rozmiar M." TextColor="Black" FontSize="Large" FontAttributes="Italic" Grid.ColumnSpan="3" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="EndAndExpand"/>
+                    <Label Text="Dostępny" FontSize="Large" Grid.Column="0" Grid.Row="2" TextColor="Green" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="End"/>
+                    <Label Text="3,999zł" FontSize="Large" Grid.Column="2" Grid.Row="2" TextColor="Red"  VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Start"/>
+                    <Button Text="zakup" Grid.Column="1" Grid.Row="2" BackgroundColor="Transparent" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" BorderColor="Black" BorderWidth="1" />
+                    <Image Source="https://www.rowerymerida.pl/materialy/prod/sredni_2013/1640.jpg" Aspect="AspectFit" Grid.ColumnSpan="3" Grid.Column="0" Grid.Row="4" />
+                    <Label Text="Merida NINETY-SIX 600 rozmiar M." TextColor="Black" FontSize="Large" FontAttributes="Italic" Grid.ColumnSpan="3" Grid.Row="3" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="EndAndExpand"/>
+                    <Label Text="Dostępny" FontSize="Large" Grid.Column="0" Grid.Row="5" TextColor="Green" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="End"/>
+                    <Label Text="8,499zł" FontSize="Large" Grid.Column="2" Grid.Row="5" TextColor="Red"  VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Start"/>
+                    <Button Text="zakup" Grid.Column="1" Grid.Row="5" BackgroundColor="Transparent" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" BorderColor="Black" BorderWidth="1" />
+                    <Image Source="https://www.rowerymerida.pl/materialy/prod/sredni_2013/1635.jpg" Aspect="AspectFit" Grid.ColumnSpan="3" Grid.Column="0" Grid.Row="7" />
+                    <Label Text="NINETY-SIX TEAM." TextColor="Black" FontSize="Large" FontAttributes="Italic" Grid.ColumnSpan="3" Grid.Row="6" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="EndAndExpand"/>
+                    <Label Text="Dostępny" FontSize="Large" Grid.Column="0" Grid.Row="8" TextColor="Green" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="End"/>
+                    <Label Text="35,000zł" FontSize="Large" Grid.Column="2" Grid.Row="8" TextColor="Red"  VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Start"/>
+                    <Button Text="zakup" Grid.Column="1" Grid.Row="8" BackgroundColor="Transparent" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" BorderColor="Black" BorderWidth="1" />
+
+
+                </Grid>
+                    
+                
+    
+            </ScrollView>
+        </StackLayout>
+        
+
+    </ContentPage.Content>
+</ContentPage>

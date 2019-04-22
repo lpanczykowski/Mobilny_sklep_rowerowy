@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ProjektApp"
+             x:Class="ProjektApp.MainPage"  >
+
+
+    <AbsoluteLayout>
+        <Image Source="imagebg.jpg" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="0.0, 0.0,1.0,1.0"
+                   AbsoluteLayout.LayoutFlags="All" Opacity="0.9"/>
+        <StackLayout
+            AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+            AbsoluteLayout.LayoutFlags="All">
+
+            <Label Text="{Binding Login, StringFormat='👋 Witaj, {0}' }" VerticalOptions="Center" HorizontalOptions="Center" FontSize="50" TextColor="Blue" FontAttributes="Bold" TranslationY="20"/>
+            <Label Text=" w 𝓑𝓲𝓴𝓮𝓘𝓼𝓵𝓮"  VerticalOptions="Center" HorizontalOptions="Center" FontSize="70" TextColor="Blue" FontAttributes="Bold"/>
+            <Image Source="image7918.jpg" Scale="2" VerticalOptions="CenterAndExpand" />
+            <Grid VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand" >
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="100"/>
+
+
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="130"/>
+                    <ColumnDefinition Width="100"/>
+
+
+                </Grid.ColumnDefinitions>
+
+                <ImageButton Source="skleplogo.png" Aspect="Fill" Clicked="Sklep_button" Grid.Column="1" Grid.RowSpan="2" BorderColor="Transparent" BackgroundColor="Transparent"  />
+                <ImageButton Source="serwislogo.png"  Aspect="Fill" Clicked="Serwis_button" Grid.Column="0" Grid.Row="1" BorderColor="Transparent" BackgroundColor="Transparent" />
+                <ImageButton Source="pomoclogo.png" Aspect="Fill" IsEnabled="False"   Clicked="Pomoc_button" Grid.Column="2"  Grid.Row="1" BorderColor="Transparent" BackgroundColor="Transparent"/>
+
+            </Grid>
+
+
+
+
+        </StackLayout>
+    </AbsoluteLayout>
+ 
+
+
+
+       
+        
+
+
+
+
+</ContentPage>

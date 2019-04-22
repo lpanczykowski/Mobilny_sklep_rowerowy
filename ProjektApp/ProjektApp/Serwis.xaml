@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjektApp.Serwis">
+    <ContentPage.Content>
+    
+        <AbsoluteLayout>
+            <Image Source="imagebg.jpg" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="0.0, 0.0,1.0,1.0"
+                   AbsoluteLayout.LayoutFlags="All" Opacity="0.9"/>
+            <StackLayout
+            AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+            AbsoluteLayout.LayoutFlags="All">
+
+
+
+                <Frame OutlineColor="Blue" 
+                   WidthRequest="300" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" BackgroundColor="White">
+                    <StackLayout>
+                        <Label Text="Wybierz datę " HorizontalOptions="CenterAndExpand"/>
+                        <DatePicker x:Name="DatePicker"
+                    Format="D"
+                    Margin="30, 0, 0, 30"
+                  />
+                        <Entry Placeholder="Imie" x:Name="ser_imie"  />
+                        <Entry Placeholder="Nazwisko" x:Name="ser_naz"  />
+                        <Picker x:Name="picker"
+        Title="Wybierz usługę"
+        TitleColor="Gray" FontSize="Large">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Przegląd ogólny</x:String>
+                                    <x:String>Przegląd kompleksowy</x:String>
+
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                        <Button Text="Zapisz się" Clicked="Dalej_button" HorizontalOptions="CenterAndExpand" WidthRequest="200"/>
+
+                    </StackLayout>
+                </Frame>
+              
+
+
+            </StackLayout>
+        </AbsoluteLayout>
+
+
+    </ContentPage.Content>
+</ContentPage>

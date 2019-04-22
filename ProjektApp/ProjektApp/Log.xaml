@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjektApp.Log" >
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Image Source="imagebg.jpg" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="0.0, 0.0,1.0,1.0"
+                   AbsoluteLayout.LayoutFlags="All" Opacity="0.9"/>
+            <StackLayout
+            AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+            AbsoluteLayout.LayoutFlags="All">
+
+
+                <Label Text="𝓑𝓲𝓴𝓮𝓘𝓼𝓵𝓮" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" FontSize="80" FontAttributes="Italic" TextColor="Blue"/>
+            <Image Source="image7918.jpg" Scale="2" VerticalOptions="CenterAndExpand" />
+                <Frame OutlineColor="LightSkyBlue"  
+                   WidthRequest="300" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" TranslationY="-50"
+                       BackgroundColor="White"> 
+                    <StackLayout>
+
+                        <Entry Placeholder="Login" FontSize="20"  x:Name="entry_login" PlaceholderColor="Black"/>
+                        <Entry Placeholder="Hasło" FontSize="20" x:Name ="entry_pass" PlaceholderColor="Black"  IsPassword="True"  />
+                    </StackLayout>
+                </Frame>
+                <StackLayout TranslationY="-60">
+                   
+                    <Button Text="Zaloguj"  Clicked="Log_button" VerticalOptions="Center" Opacity="0.8"
+                HorizontalOptions="Center" WidthRequest="200" BackgroundColor="Green"  />
+                <Button Text="Zarejestruj się" Clicked="Rej_button" VerticalOptions="Center" Opacity="0.8"
+                HorizontalOptions="Center" WidthRequest="200" BackgroundColor="Green"   />
+                    <Button Text="Zaloguj jako gość" Clicked="Gosc_button" VerticalOptions="StartAndExpand" Opacity="0.8"
+                HorizontalOptions="Center" WidthRequest="200"   BackgroundColor="Green" />
+                </StackLayout>
+
+            
+
+        </StackLayout>
+        </AbsoluteLayout>
+            
+      
+    </ContentPage.Content>
+</ContentPage>
